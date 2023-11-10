@@ -1,7 +1,7 @@
 # Website-Sign-On
   
   ## Description
-  This project was created to automate the login process on a website. It will automatically visit the URL specified in the script using Puppeteer's built-in test version of Google Chrome. Then it automatically fills out the login form and submits it with the user's credentials.
+  This is a Node.js application that was created to automate the login process on a website. It will automatically visit the URL specified in the script using Puppeteer's built-in test version of Google Chrome. Then it automatically fills out the login form and submits it with the user's credentials.
 
 ---
 
@@ -19,13 +19,13 @@
   ## Installation
   The user should go to the root of the project's directory in the terminal and use the command: `npm i` to automatically install the application's dependencies.<br><br> These dependencies are: <br>
   [Puppeteer](https://pptr.dev/)<br>
-  [Dotenv](https://www.npmjs.com/package/dotenv)<br><br>
+  [Dotenv](https://www.npmjs.com/package/dotenv)
 
 ---
 
   ## Usage
-  After the dependencies are installed, the application can be initiated by using the command: `node index.js` in the root of the project's directory.
-  **Be sure to fill out the .env and index.js files in the project's directory**
+  **Be sure to fill out the .env and index.js files in the project's directory.**<br>
+  The application can be initiated in the terminal by using the command: `node index.js` in the root of the project's directory.
 
 ---
 
