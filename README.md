@@ -20,12 +20,13 @@
   The user should go to the root of the project's directory in the terminal and use the command: `npm i` to automatically install the application's dependencies.<br><br> These dependencies are: <br>
   [Puppeteer](https://pptr.dev/)<br>
   [Dotenv](https://www.npmjs.com/package/dotenv)<br><br>
-  **Be sure to fill out the .env file in the project's directory with your username and password**
 
 ---
 
   ## Usage
   After the dependencies are installed, the application can be initiated by using the command: `node index.js` in the root of the project's directory.
+  **Be sure to fill out the .env file in the project's directory with your username and password**
+  **Be sure to fill out the index.js file in the project's directory with the URL you want to automatically visit and the website's form selectors**
 
 ---
 
