@@ -3,22 +3,22 @@ const puppeteer = require('puppeteer');
 
 (async () => {
   try {
-  const browser = await puppeteer.launch({ headless: false }); // Launch a non-headless browser for debugging
+  // Launches the non-headless browser version that comes with Puppeteer
+  const browser = await puppeteer.launch({ headless: false });
 
+  // Visits the web page specified
   const page = await browser.newPage();
-  await page.goto('https://github.com/login'); // Replace with the login page URL
+  await page.goto('https://github.com/login'); // Replace with login page URL
 
-  // Locate the username and password fields and input your credentials
-  await page.type('input[name="login"]', process.env.USERNAME);
-  await page.type('input[name="password"]', process.env.PASSWORD);
+  // Fills out the login form
+  await page.type('input[name="login"]', process.env.USERNAME); // Replace with site's username field selector
+  await page.type('input[name="password"]', process.env.PASSWORD); // Replace with site's password field selector
 
-  // Submit the login form
-  await page.click('input[name="commit"]'); // Replace with the login button selector
-
-  // Wait for the login to complete 
-  await page.waitForNavigation();
+  // Submits the login form
+  await page.click('input[name="commit"]'); // Replace with site's login button selector
 
 } catch (error) {
   console.error('An error occurred:', error);
 }
+
 })();
