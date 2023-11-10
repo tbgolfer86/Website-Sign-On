@@ -25,8 +25,7 @@
 
   ## Usage
   After the dependencies are installed, the application can be initiated by using the command: `node index.js` in the root of the project's directory.
-  **Be sure to fill out the .env file in the project's directory with your username and password**
-  **Be sure to fill out the index.js file in the project's directory with the URL you want to automatically visit and the website's form selectors**
+  **Be sure to fill out the .env and index.js files in the project's directory**
 
 ---
 
